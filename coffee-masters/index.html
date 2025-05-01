@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    header {
+      background-color: #40251b;
+      color: #f3e9ba;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    img {
+      height: 60px;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      margin: 10px;
+    }
+
+    body {
+      background-color: #eff0f0;
+    }
+
+    input {
+      border-radius: 100px;
+    }
+
+    .main-container {
+      margin-top: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .right-card-container {
+      width: 100%;
+      margin-left: 20px;
+      margin-right: 30px;
+    }
+
+    .card {
+      background-color: #eee1d5;
+      border-radius: 20px;
+      padding: 15px;
+      color: #644e39c4;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .card-title-text {
+      text-transform: uppercase;
+    }
+
+    .order {
+      border-bottom: #40251b;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+    }
+
+    .order-elements {
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .order-main-text {
+      font-weight: bold;
+      color: black;
+    }
+  </style>
+
+  <body>
+    <header>
+      <img src="./source/coffee_masters_logo.png" />
+      <h1>Coffee Masters</h1>
+    </header>
+    <div class="main-container">
+      <div class="card-container">
+        <div class="card">
+          <p class="card-title-text">Items</p>
+          <div class="order">
+            <div>1x</div>
+            <div class="order-elements">
+              <p class="order-main-text">Cappuccino</p>
+              <p>Lite foam</p>
+            </div>
+            <div class="order-main-text">$3.35</div>
+          </div>
+          <div class="order">
+            <div>1x</div>
+            <div class="order-elements">
+              <p class="order-main-text">Cappuccino</p>
+              <p>Lite milk</p>
+              <p>Double expresso</p>
+            </div>
+            <div class="order-main-text">$3.35</div>
+          </div>
+          <div class="order">
+            <div>1x</div>
+            <div class="order-elements">
+              <p class="order-main-text">Croissant</p>
+              <p>Butter</p>
+            </div>
+            <div class="order-main-text">$3.35</div>
+          </div>
+        </div>
+        <div class="right-card-container">
+          <div class="card">
+            <p class="card-title-text">Name</p>
+            <input />
+          </div>
+          <div class="card">
+            <p class="card-title-text">Payment</p>
+            <input />
+            <input />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div></div>
+        <button>Place order</button>
+      </div>
+    </div>
+  </body>
+</html>
