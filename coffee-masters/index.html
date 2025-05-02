@@ -37,8 +37,41 @@
       background-color: #eff0f0;
     }
 
+    .input-group {
+      position: relative;
+      display: inline-block;
+    }
+
     input {
       border-radius: 100px;
+      border-color: #644e39c4;
+      border-width: 1.5px;
+      padding: 12px 10px 8px 25px;
+      margin: 10px 0px;
+      background-color: #eee1d5;
+    }
+
+    .full-input {
+      width: -webkit-fill-available;
+    }
+
+    .input-label {
+      background-color: #eee1d5;
+      color: #644e39c4;
+      font-size: 11px;
+      position: absolute;
+      left: 25px;
+      top: -7px;
+      padding: 0 2px;
+    }
+
+    button {
+      border-radius: 100px;
+      color: darkgreen;
+      background-color: #e79f4d;
+      width: 100%;
+      height: 35px;
+      border: none;
     }
 
     .main-container {
@@ -46,6 +79,9 @@
       margin-left: 20px;
       margin-right: 20px;
       margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .card-container {
@@ -67,28 +103,68 @@
       color: #644e39c4;
       width: 100%;
       margin-top: 20px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      display: flex;
+      flex-direction: column;
     }
 
     .card-title-text {
       text-transform: uppercase;
+      margin-top: 0px;
     }
 
     .order {
-      border-bottom: #40251b;
       display: flex;
       flex-direction: row;
       align-items: start;
+      margin-bottom: 15px;
+    }
+
+    .order:not(:last-of-type) {
+      border-bottom: 0.1rem solid #b17742c4;
     }
 
     .order-elements {
       width: 100%;
       margin-left: 10px;
       margin-right: 10px;
+      margin-bottom: 20px;
+      align-items: start;
     }
 
     .order-main-text {
       font-weight: bold;
       color: black;
+      margin: 0px;
+      margin-bottom: 5px;
+    }
+
+    .order-secondary-text {
+      color: #875d35c4;
+      font-size: 0.8rem;
+      margin: 2px;
+      font-weight: 400;
+    }
+
+    .price-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .list-price-container {
+      width: 300px;
+      margin-bottom: 30px;
+    }
+
+    .singular-price-container {
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   </style>
 
@@ -105,7 +181,7 @@
             <div>1x</div>
             <div class="order-elements">
               <p class="order-main-text">Cappuccino</p>
-              <p>Lite foam</p>
+              <p class="order-secondary-text">Lite foam</p>
             </div>
             <div class="order-main-text">$3.35</div>
           </div>
@@ -113,8 +189,8 @@
             <div>1x</div>
             <div class="order-elements">
               <p class="order-main-text">Cappuccino</p>
-              <p>Lite milk</p>
-              <p>Double expresso</p>
+              <p class="order-secondary-text">Lite milk</p>
+              <p class="order-secondary-text">Double expresso</p>
             </div>
             <div class="order-main-text">$3.35</div>
           </div>
@@ -122,7 +198,7 @@
             <div>1x</div>
             <div class="order-elements">
               <p class="order-main-text">Croissant</p>
-              <p>Butter</p>
+              <p class="order-secondary-text">Butter</p>
             </div>
             <div class="order-main-text">$3.35</div>
           </div>
@@ -130,17 +206,47 @@
         <div class="right-card-container">
           <div class="card">
             <p class="card-title-text">Name</p>
-            <input />
+            <div class="input-group">
+              <p class="input-label">Name of order</p>
+              <input
+                class="full-input"
+                type="text"
+                placeholder="Ford Prefect"
+              />
+            </div>
           </div>
           <div class="card">
             <p class="card-title-text">Payment</p>
-            <input />
-            <input />
+            <div class="input-group">
+              <p class="input-label">Card number</p>
+              <input
+                class="full-input"
+                type="text"
+                placeholder="1234 5678 9012 3456"
+              />
+            </div>
+            <div class="input-group">
+              <p class="input-label">CCV Number</p>
+              <input type="text" placeholder="001" />
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <div></div>
+      <div class="price-container">
+        <div class="list-price-container">
+          <div class="singular-price-container">
+            <p>Subtotal:</p>
+            <p>$9.65</p>
+          </div>
+          <div class="singular-price-container">
+            <p>Tax:</p>
+            <p>$0.82</p>
+          </div>
+          <div class="singular-price-container">
+            <p class="order-main-text">Total:</p>
+            <p class="order-main-text">$10.47</p>
+          </div>
+        </div>
         <button>Place order</button>
       </div>
     </div>
