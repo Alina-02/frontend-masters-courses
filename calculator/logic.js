@@ -58,7 +58,7 @@ const onClickOperator = (operator) => {
   } else {
     makeOperation(int);
   }
-  console.log(operator);
+
   lastOperator = operator;
 
   buffer = "0";
@@ -70,8 +70,7 @@ const onClickEqual = () => {
   }
 
   makeOperation(parseInt(buffer));
-  console.log(total, typeof total, "total");
-  console.log(buffer, typeof buffer, "buffer");
+
   buffer = total;
   total = 0;
   lastOperator = null;
