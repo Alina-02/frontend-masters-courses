@@ -58,7 +58,7 @@ const onClickOperator = (operator) => {
   } else {
     makeOperation(int);
   }
-
+  console.log(operator);
   lastOperator = operator;
 
   buffer = "0";
@@ -68,12 +68,13 @@ const onClickEqual = () => {
   if (lastOperator === null) {
     return;
   }
-  console.log("hola");
+
   makeOperation(parseInt(buffer));
-  buffer += total;
-  lastOperator = null;
+  console.log(total, typeof total, "total");
+  console.log(buffer, typeof buffer, "buffer");
+  buffer = total;
   total = 0;
-  buffer = "0";
+  lastOperator = null;
 };
 
 const makeOperation = (int) => {
@@ -87,7 +88,7 @@ const makeOperation = (int) => {
     case "/":
       total /= int;
       break;
-    case "*":
+    case "x":
       total *= int;
       break;
   }
@@ -96,6 +97,7 @@ const makeOperation = (int) => {
 const onClickC = () => {
   total = 0;
   buffer = "0";
+  lastOperator = null;
 };
 
 function rerender() {
