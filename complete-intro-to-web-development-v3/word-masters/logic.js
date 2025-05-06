@@ -79,31 +79,19 @@ const checkActualWord = () => {
         console.log("aaa");
         console.log(dw);
         console.log(actual_word);
-        if (dw[0] === actual_word[0]) {
-          updateLetterColor(
-            document.getElementById(`letter-${attempts}1`),
-            "Correct"
-          );
-        } else if (dw[1] === actual_word[1]) {
-          updateLetterColor(
-            document.getElementById(`letter-${attempts}2`),
-            "Correct"
-          );
-        } else if (dw[2] === actual_word[2]) {
-          updateLetterColor(
-            document.getElementById(`letter-${attempts}3`),
-            "Correct"
-          );
-        } else if (dw[3] === actual_word[3]) {
-          updateLetterColor(
-            document.getElementById(`letter-${attempts}4`),
-            "Correct"
-          );
-        } else if (dw[4] === actual_word[4]) {
-          updateLetterColor(
-            document.getElementById(`letter-${attempts}5`),
-            "Correct"
-          );
+
+        for (i = 0; i < 5; i++) {
+          if (dw[i] === actual_word[i]) {
+            updateLetterColor(
+              document.getElementById(`letter-${attempts}${i + 1}`),
+              "Correct"
+            );
+          } else if (dw.includes(actual_word[i])) {
+            updateLetterColor(
+              document.getElementById(`letter-${attempts}${i + 1}`),
+              "Semicorrect"
+            );
+          }
         }
       });
     }
@@ -131,7 +119,7 @@ const updateLetterColor = (HTMLElement, state) => {
     HTMLElement.style.backgroundColor = "green";
     HTMLElement.style.color = "white";
   } else if (state === "Semicorrect") {
-    HTMLElement.style.backgroundColor = "yellow";
+    HTMLElement.style.backgroundColor = "#D4AF37";
     HTMLElement.style.color = "white";
   } else if (state === "Incorrect") {
     HTMLElement.style.backgroundColor = "gray";
