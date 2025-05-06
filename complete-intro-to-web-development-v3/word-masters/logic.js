@@ -76,10 +76,6 @@ const checkActualWord = () => {
   isValidWord(JSON.stringify({ word: actual_word })).then((valid) => {
     if (valid) {
       daily_word.then((dw) => {
-        console.log("aaa");
-        console.log(dw);
-        console.log(actual_word);
-
         for (i = 0; i < 5; i++) {
           if (dw[i] === actual_word[i]) {
             updateLetterColor(
@@ -93,6 +89,8 @@ const checkActualWord = () => {
             );
           }
         }
+        actual_word = "";
+        attempts += 1;
       });
     }
   });
