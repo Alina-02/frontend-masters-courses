@@ -20,7 +20,7 @@ let attempts = 1;
 let win = false;
 
 document.addEventListener("keydown", (event) => {
-  if (attempts < 6 && !win) {
+  if (attempts < 7 && !win) {
     updateActualWord(event.key);
     rerender();
   }
@@ -61,10 +61,6 @@ const rerender = () => {
   const letterFiveDiv = document.getElementById(`letter-${attempts}5`);
   letterFiveDiv.innerHTML =
     actual_word.length >= 5 ? actual_word[4].toUpperCase() : "";
-
-  if (attempts > 6) {
-    window.alert("FAILED");
-  }
 };
 
 const checkActualWord = () => {
@@ -99,6 +95,9 @@ const checkActualWord = () => {
             }
             actual_word = "";
             attempts += 1;
+            if (attempts === 7) {
+              window.alert("You lose");
+            }
           }
         });
       } else {
