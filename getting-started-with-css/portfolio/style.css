@@ -149,6 +149,32 @@ nav [class*="fa-"]:hover {
   background-color: var(--hot-red);
 }
 
+footer {
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer div {
+  display: flex;
+  gap: 3rem;
+}
+
+footer [class*="fa-"] {
+  font-size: 3rem;
+  color: var(--soft-red);
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+
 @media (min-width: 850px) {
   nav {
     max-width: 1200px;
