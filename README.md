@@ -27,7 +27,7 @@ Begginer Learning Path Progress
   - **My blog**: a basic blog created only with HTML. 
   - **Coffee masters**: a basic webpage created with HTML and CSS.
   - **Calculator**: calculator created with HTML, CSS and JavaScript.
-  - **Word masters**: a copy of the popular game Wordly created with HTML, CSS and JavaScript.
+  - **Word masters**: a copy of the popular game Wordle created with HTML, CSS and JavaScript.
 - **Getting started with CSS**
   - **Portfolio**: a portfolio basic website created with HTML and CSS:
   
