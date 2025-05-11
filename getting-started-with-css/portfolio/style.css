@@ -5,6 +5,7 @@
   --surface-brown: #d9bba9;
   --soft-red: #f16f68;
   --red: #a62b1f;
+  --dark-red: #410703;
   --hot-red: #b10001;
   --black: #0d0d0d;
   --white: #ffe9d7;
@@ -47,8 +48,29 @@ a:hover {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
+.section-dkred {
+  background-color: var(--dark-red);
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 0, 1, 1) 0%,
+    rgba(166, 137, 111, 1) 100%
+  );
+  height: 2px;
+}
+
+/* INTRO CLASSES */
+
 #intro {
-  padding-bottom: 10rem;
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #intro p {
@@ -72,6 +94,8 @@ a:hover {
   font-weight: normal;
 }
 
+/* CONTACT CLASSES */
+
 #contact {
   padding: 3rem 0;
   margin: 0 auto;
@@ -90,6 +114,8 @@ a:hover {
 #contact a {
   margin-top: 3rem;
 }
+
+/* NAV CLASSES */
 
 nav {
   font-family: var(--mono);
@@ -140,6 +166,9 @@ nav [class*="fa-"]:hover {
 
 .button {
   background-color: var(--red);
+  color: var(--white);
+  font-family: var(--mono);
+  text-decoration: none;
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -149,9 +178,11 @@ nav [class*="fa-"]:hover {
   background-color: var(--hot-red);
 }
 
+/* FOOTER CLASSES */
+
 footer {
   padding: 0;
-  margin: 2rem 0;
+  padding: 4rem 0;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -173,6 +204,78 @@ footer p {
   margin: 0;
   padding: 0;
   font-weight: lighter;
+}
+
+/* PROJECTS CLASSES */
+
+#projects {
+  padding: 4rem 1rem;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+  color: var(--soft-red);
+}
+
+#projects h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0;
+}
+
+.blackbox {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+#projects img {
+  margin: 2rem 0 4rem 0;
+  border-left: 1px solid var(--red);
+  border-top: 1px solid var(--red);
+  border-radius: 25px;
+  padding: 1rem;
+  max-width: 800px;
+}
+
+@media (min-width: 550px) {
+  article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+  #projects img {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+  .text {
+    grid-column: 5/11;
+    grid-row: 1/2;
+
+    order: 2;
+    text-align: right;
+  }
+  #projects ul {
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: 850px) {
