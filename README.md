@@ -1,5 +1,5 @@
 
-[![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)][fem]
+![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)][fem]
 
 
 I'm building up my web development foundations through the Frontend Masters Beginner Learning Path:
