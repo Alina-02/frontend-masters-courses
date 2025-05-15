@@ -1,0 +1,12 @@
+@import "./base.css";
+
+body {
+  background-color: var(--color-text-on-primary);
+  color: var(--color-primary);
+  font-family: InterBold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
