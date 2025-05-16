@@ -1,4 +1,7 @@
 
+![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)
+
+
 I'm building up my web development foundations through the Frontend Masters Beginner Learning Path:
 https://frontendmasters.com/learn/beginner/
 
@@ -7,7 +10,7 @@ https://frontendmasters.com/learn/beginner/
 
 Begginer Learning Path Progress
 
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 50%
+🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ 56%
 
 ## 📚 Frontend Masters Beginner Path Progress
 
@@ -16,7 +19,7 @@ Begginer Learning Path Progress
 | Complete Intro to Web Development, v3             | ![100%](https://progress-bar.xyz/100)   | [Projects](https://github.com/Alina-02/frontend-masters/tree/main/complete-intro-to-web-development-v3) |
 | Getting Started with CSS             | ![100%](https://progress-bar.xyz/100)   | [Project](https://github.com/Alina-02/frontend-masters/tree/main/getting-started-with-css/portfolio)         |
 | Getting Started with JavaScript, v2      | ![100%](https://progress-bar.xyz/100) | [Exercises](https://github.com/Alina-02/frontend-masters/tree/main/getting-started-with-javascript-v2)      |
-| CSS Foundations      | ![0%](https://progress-bar.xyz/0) | []()      |
+| CSS Foundations      | ![27%](https://progress-bar.xyz/27) | [Project](https://github.com/Alina-02/frontend-masters/tree/main/css-foundations/fem-css-foundations-main)      |
 | JavaScript: From First Steps to Professional      | ![0%](https://progress-bar.xyz/0) | []()      |
 | Website Accessibility, v3      | ![0%](https://progress-bar.xyz/0) | []()      |
 
