@@ -120,7 +120,7 @@
       const fact = {
         statement: "hola",
         answer: false,
-        explanation: "",
+        explanation: "asdfasdf",
       };
 
       // TODO 3: Set the text of the statement element to the fact's statement
@@ -137,9 +137,7 @@
       // enable(button) should remove the attribute "disabled" from the button element
 
       const enable = (button) => {
-        if (button.textContent == "disabled") {
-          button.setAttribute("disabled", false);
-        }
+        button.removeAttribute("disabled");
       };
 
       // TODO 5: Declare an isCorrect function that compares a guess to the right answer
@@ -153,23 +151,24 @@
       // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
 
       for (let b of optionButtons) {
-        b.addEventListener("click", () => {
-          explanation.setAttribute("textContent", fact.explanation);
+        b.addEventListener("click", (e) => {
+          explanation.textContent = fact.explanation;
+
           // TODO 7: Within the event handler function,
           // Use a for loop to disable all the option buttons
-          for (let b of optionButtons) {
-            disable(b);
+          for (let b2 of optionButtons) {
+            disable(b2);
           }
 
           // TODO 8: Within the event handler function,
           // Get the guessed value from the clicked button
           // Use a conditional to compare the guess to the fact's answer
           // and add the "correct"/"incorrect" class as appropriate
-          const res = b.textContent;
+          const res = b.value;
           if (isCorrect(res)) {
-            statement.classList.add(".correct");
+            b.classList.add("correct");
           } else {
-            statement.classList.add(".incorrect");
+            b.classList.add("incorrect");
           }
         });
       }
