@@ -119,7 +119,7 @@
 
       const fact = {
         statement: "hola",
-        answer: false,
+        answer: "false",
         explanation: "asdfasdf",
       };
 
@@ -144,7 +144,7 @@
       // isCorrect(guess) should return true if the guess matches the fact's answer
 
       const isCorrect = (guessString) => {
-        return gessString === fact.answer.toString();
+        return guessString === fact.answer;
       };
 
       // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
@@ -164,7 +164,7 @@
           // Get the guessed value from the clicked button
           // Use a conditional to compare the guess to the fact's answer
           // and add the "correct"/"incorrect" class as appropriate
-          const res = b.value;
+          const res = e.target.value;
           if (isCorrect(res)) {
             b.classList.add("correct");
           } else {
