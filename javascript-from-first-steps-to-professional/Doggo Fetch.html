@@ -266,7 +266,7 @@
       function getMultipleChoices(n, correctAnswer, array) {
         // Use a while loop and the getRandomElement() function
         // Make sure there are no duplicates in the array
-        const res = [correctAnwser];
+        const res = [correctAnswer];
         while (res.length < n) {
           const random_element = getRandomElement(array);
           if (!res.includes(random_element)) {
@@ -284,9 +284,10 @@
         // The string method .split(char) may come in handy
         // Try to use destructuring as much as you can
 
-        const [, , , , breed, ...rest] = url.split("/");
-        const joinedBrees = breed.split("-").joint(" ");
-        return breed;
+        const [, path] = url.split("/breeds/");
+        const [breedID] = path.split("/");
+        const [breed, subtype] = breedID.split("-");
+        return [subtype, breed].join(" ");
       }
 
       // TODO 3
@@ -296,7 +297,7 @@
       async function fetchMessage(url) {
         try {
           const response = await fetch(url);
-          const json = JSON.parse(response);
+          const json = await response.json();
           return json.message;
         } catch (error) {
           console.log(error);
@@ -325,12 +326,12 @@
         // Create a button element whose name, value, and textContent properties are the value of that choice,
         // attach a "click" event listener with the buttonHandler function,
         // and append the button as a child of the options element
-
+        console.log(choicesArray);
         choicesArray.map((choice) => {
           const button = document.createElement("button");
-          button.textContent = choice.textContent;
-          button.name = choice.name;
-          button.value = choice.value;
+          button.textContent = choice;
+          button.name = choice;
+          button.value = choice;
           button.addEventListener("click", buttonHandler);
           options.appendChild(button);
         });
@@ -364,6 +365,9 @@
       // TODO 5
       // Asynchronously call the loadQuizData() function,
       // Then call renderQuiz() with the returned imageUrl, correctAnswer, and choices
+
+      const [imgUrl, correctAnwser, choices] = await loadQuizData();
+      renderQuiz(imgUrl, correctAnwser, choices);
     </script>
   </body>
 </html>
