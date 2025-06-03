@@ -285,6 +285,7 @@
         // Try to use destructuring as much as you can
 
         const [, , , , breed, ...rest] = url.split("/");
+        const joinedBrees = breed.split("-").joint(" ");
         return breed;
       }
 
@@ -292,7 +293,15 @@
       // Given a URL, fetch the resource at that URL,
       // then parse the response as a JSON object,
       // finally return the "message" property of its body
-      async function fetchMessage(url) {}
+      async function fetchMessage(url) {
+        try {
+          const response = await fetch(url);
+          const json = JSON.parse(response);
+          return json.message;
+        } catch (error) {
+          console.log(error);
+        }
+      }
 
       // Function to add the multiple-choice buttons to the page
       function renderButtons(choicesArray, correctAnswer) {
@@ -316,6 +325,15 @@
         // Create a button element whose name, value, and textContent properties are the value of that choice,
         // attach a "click" event listener with the buttonHandler function,
         // and append the button as a child of the options element
+
+        choicesArray.map((choice) => {
+          const button = document.createElement("button");
+          button.textContent = choice.textContent;
+          button.name = choice.name;
+          button.value = choice.value;
+          button.addEventListener("click", buttonHandler);
+          options.appendChild(button);
+        });
       }
 
       // Function to add the quiz content to the page
