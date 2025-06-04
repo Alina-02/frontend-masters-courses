@@ -7,7 +7,7 @@ https://frontendmasters.com/learn/beginner/
 
 Begginer Learning Path Progress
 
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜ 83%
+🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜ 87%
 
 ## 📚 Frontend Masters Beginner Path Progress
 
@@ -31,5 +31,6 @@ Begginer Learning Path Progress
   - **Portfolio**: a portfolio basic website created with HTML and CSS:
 - **JavaScript: From First Steps to Professional**
   - **Quiz**
+  - **Dog's quiz**
 
 ---
