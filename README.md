@@ -7,7 +7,7 @@ https://frontendmasters.com/learn/beginner/
 
 Begginer Learning Path Progress
 
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜ 87%
+🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜ 89%
 
 ## 📚 Frontend Masters Beginner Path Progress
 
