@@ -17,8 +17,8 @@ Begginer Learning Path Progress
 | Getting Started with CSS                     | ![100%](https://progress-bar.xyz/100) | [Project](https://github.com/Alina-02/frontend-masters/tree/main/getting-started-with-css/portfolio)           |
 | Getting Started with JavaScript, v2          | ![100%](https://progress-bar.xyz/100) | [Exercises](https://github.com/Alina-02/frontend-masters/tree/main/getting-started-with-javascript-v2)         |
 | CSS Foundations                              | ![100%](https://progress-bar.xyz/100) | [Project](https://github.com/Alina-02/frontend-masters/tree/main/css-foundations/fem-css-foundations-main)     |
-| JavaScript: From First Steps to Professional | ![56%](https://progress-bar.xyz/56)   | [Projects](https://github.com/Alina-02/frontend-masters/tree/main/javascript-from-first-steps-to-professional) |
-| Website Accessibility, v3                    | ![0%](https://progress-bar.xyz/0)     | []()                                                                                                           |
+| JavaScript: From First Steps to Professional | ![100%](https://progress-bar.xyz/100) | [Projects](https://github.com/Alina-02/frontend-masters/tree/main/javascript-from-first-steps-to-professional) |
+| Website Accessibility, v3                    | ![25%](https://progress-bar.xyz/25)   | []()                                                                                                           |
 
 ## 🚀 Featured Projects
 
