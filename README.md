@@ -7,7 +7,7 @@ https://frontendmasters.com/learn/beginner/
 
 Begginer Learning Path Progress
 
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜ 91%
+🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 100%
 
 ## 📚 Frontend Masters Beginner Path Progress
 
@@ -18,7 +18,7 @@ Begginer Learning Path Progress
 | Getting Started with JavaScript, v2          | ![100%](https://progress-bar.xyz/100) | [Exercises](https://github.com/Alina-02/frontend-masters/tree/main/getting-started-with-javascript-v2)         |
 | CSS Foundations                              | ![100%](https://progress-bar.xyz/100) | [Project](https://github.com/Alina-02/frontend-masters/tree/main/css-foundations/fem-css-foundations-main)     |
 | JavaScript: From First Steps to Professional | ![100%](https://progress-bar.xyz/100) | [Projects](https://github.com/Alina-02/frontend-masters/tree/main/javascript-from-first-steps-to-professional) |
-| Website Accessibility, v3                    | ![55%](https://progress-bar.xyz/55)   | []()                                                                                                           |
+| Website Accessibility, v3                    | ![100%](https://progress-bar.xyz/100) | []()                                                                                                           |
 
 ## 🚀 Featured Projects
 
