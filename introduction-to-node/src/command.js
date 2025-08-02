@@ -8,6 +8,7 @@ import {
   removeAllNotes,
 } from "./notes.js";
 import { listNotes } from "./utils.js";
+import { start } from "./server.js";
 
 yargs(hideBin(process.argv))
   .command(
@@ -69,7 +70,7 @@ yargs(hideBin(process.argv))
     }
   )
   .command(
-    "webn [port]",
+    "web [port]",
     "launch website to see notes",
     (yargs) => {
       return yargs.positional("port", {
@@ -78,7 +79,10 @@ yargs(hideBin(process.argv))
         type: "number",
       });
     },
-    async (argv) => {}
+    async (argv) => {
+      const notes = await getAllNotes();
+      start(notes, argv.port);
+    }
   )
   .command(
     "clean",
