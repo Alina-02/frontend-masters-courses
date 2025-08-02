@@ -1,9 +1,15 @@
 ![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)
 
+All the projects and exercises I created for the Frontend Masters courses.
+- Beginner Frontend Path: Building a solid foundation in web development.
+- Node.js Introduction: Beginning my journey as a full-stack developer, expanding on my JavaScript knowledge.
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs,t&theme=light)](https://skillicons.dev)
+
+# Beginner Learning Path
+
 I'm building up my web development foundations through the Frontend Masters Beginner Learning Path:
 https://frontendmasters.com/learn/beginner/
-
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,t&theme=light)](https://skillicons.dev)
 
 Begginer Learning Path Progress
 
