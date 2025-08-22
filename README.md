@@ -5,6 +5,7 @@ All the projects and exercises I created for the Frontend Masters courses.
 - **Beginner Frontend Path**: Building a solid foundation in web development.
 - **Node.js Introduction**: Beginning my journey as a full-stack developer, expanding on my JavaScript knowledge.
 - **Next.js Fundamentals**: Following my full-stack journey inside javascript/typescript environment.
+- **Electron V3**: I am looking for an opportunity to create desktop applications using my current knowledge.
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs,nextjs,t&theme=light)](https://skillicons.dev)
 
