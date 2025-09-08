@@ -69,7 +69,8 @@ const colors = {
   },
 };
 
-/** @type {import('tailwindcss').Config} */ const config = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: ["./index.html", "./src/renderer/**/*.{js,ts,jsx,tsx,css}"],
   theme: {
     fontFamily: {
