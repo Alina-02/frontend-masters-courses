@@ -36,5 +36,5 @@ Elements.ShowFileButton.addEventListener("click", () => {
 });
 
 Elements.OpenInDefaultApplicationButton.addEventListener("click", () => {
-  window.api.showInDefaultApplication();
+  window.api.openInDefaultApplication();
 });
